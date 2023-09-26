@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,400&display=swap');
 
 :root{
+
 /* palette */
 --primary-solid:rgba(255, 0, 0, 1);
 --primary-900:rgba(255, 0, 0, 0.9);
@@ -34,14 +35,115 @@
 --font-xsmall: 1.4em;
 
 /* Spacing */
---spacing-128: 12.8 rem;
---spacing-68: 6.8 rem;
---spacing-36: 3.6 rem;
---spacing-28: 2.8 rem;
---spacing-24: 2.4 rem;
---spacing-20: 2 rem;
---spacing-16: 1.6 rem;
---spacing-12: 1.2 rem;
---spacing-8: 0.8 rem;
+--spacing-128: 12.8rem;
+--spacing-68: 6.8rem;
+--spacing-36: 3.6rem;
+--spacing-28: 2.8rem;
+--spacing-26: 2.6rem;
+--spacing-24: 2.4rem;
+--spacing-20: 2rem;
+--spacing-16: 1.6rem;
+--spacing-12: 1.2rem;
+--spacing-8: 0.8rem;
+}
 
+html{
+    font-family: var(--base-font);
+    color:var(--dark-solid);
+}
+
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+    font-family: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+p{
+font-size: var(--font-medium);
+}  
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--light-bg-solid);
+    padding: var(--spacing-36);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo{
+    max-width: 250px;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-26);
+}
+
+.navbar__link{
+    position:relative;
+    font-size: var(--font-xsmall);
+    padding: var(--spacing-8) var(--spacing-12);
+    transition: background .3s ease-in-out;
+}
+
+.navbar__link:hover {
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+  }
+  
+.with-icon{
+    display:flex;
+    align-items: center;
+    gap: var(--spacing-8);
+}
+
+.with-submenu:hover .submenu{ 
+    display:block;     
+}
+
+.submenu{
+    display:none;
+    width: 300px;
+    position:absolute;
+    background-color: var(--light-bg-solid);   
+}
+
+.submenu__link{
+    display:block;
+    padding:var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-xsmall);
+    transition: background .3s ease-in-out;
+}
+
+.submenu__link:hover {
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
 }

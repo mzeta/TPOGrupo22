@@ -4,29 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Codo23 Comision 23506 - Grupo 22</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
 </head>
 <body>
     
     <header> <!-- Inicio Header-->
-        <nav>
-            <picture>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
                 <a href="">
-                    <img src="/assets/media/images/paw.svg" alt="logo">
+                    <img src="/assets/media/images/paw-sm.png" alt="logo">
                 </a>
             </picture>
-           <ul>
-                <li>
-                    <a href='/index.html'>HOME</a>
+           <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link" href='/index.html'>HOME</a>
                 </li>
-                <li>
-                    <a href='./pages/aboutus.html'>NOSOTROS</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href='./pages/aboutus.html'>NOSOTROS</a>
                 </li>
-                <li>
-                    <a href='./pages/contactus.html'>CONTACTO</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href='./pages/contactus.html'>CONTACTO</a>
                 </li>
-                <li>
-                    <a href='./pages/shop.html'>SHOP</a>
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link  with-icon" href='./pages/shop.html'>SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">PRODUCTO 1</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">PRODUCTO 2</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">PRODUCTO 3</a>
+                        </li>
+                    </ul>
                 </li>
            </ul>    
         </nav>        
@@ -47,7 +58,7 @@
                 <p>Somos la mejor opción para vos</p>
                 <a href="./pages/aboutus.html">CONOCENOS</a>
             </article>
-            <picture>
+            <picture class="container banner">
                 <img src="./assets/media/images/pexels-blue-bird-7210524.jpg" alt="Imagen del servicio XX">
             </picture>
         </section>
@@ -55,7 +66,7 @@
     </main>
 
     <footer>
-        <div class="footer-wrapper">
+        <div>
             <ul>
                 <li><a href="#">About Us</a></li>
                 <li>Contact Us</li>
@@ -63,5 +74,6 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 </html>
