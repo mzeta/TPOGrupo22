@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,400&display=swap');
+
+:root{
+/* palette */
+--primary-solid:rgba(255, 0, 0, 1);
+--primary-900:rgba(255, 0, 0, 0.9);
+--primary-500:rgba(255, 0, 0, 0.5);
+--primary-300:rgba(255, 0, 0, 0.3);
+
+--secondary-solid:#008000;
+--secondary-900: rgba(0, 128, 0, 0.9);
+--secondary-500:rgba(0, 128, 0, 0.5);
+--secondayr-300:rgba(0, 128, 0, 0.3);
+
+--dark-solid: #1f1f1f;
+--dark-900: rgb(31, 31, 31, 0.9);
+--dark-500: rgb(31, 31, 31, 0.5);
+--dark-300: rgb(31, 31, 31, 0.3);
+
+--dark-bg-solid: #30343F;
+--light-bg-solid:#FAFAFF;
+--light-font-solid: #FFFFFF;
+
+/* Typography */
+--base-font:'Roboto', sans-serif;
+
+/* Font-sizes */
+--font-display: 4.6em;
+--font-jumbo: 3.8em;
+--font-xlarge: 3em;
+--font-large: 2.4em;
+--font-medium: 1.8em;
+--font-small: 1.6em;
+--font-xsmall: 1.4em;
+
+/* Spacing */
+--spacing-128: 12.8 rem;
+--spacing-68: 6.8 rem;
+--spacing-36: 3.6 rem;
+--spacing-28: 2.8 rem;
+--spacing-24: 2.4 rem;
+--spacing-20: 2 rem;
+--spacing-16: 1.6 rem;
+--spacing-12: 1.2 rem;
+--spacing-8: 0.8 rem;
+
+}
