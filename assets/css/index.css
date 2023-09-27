@@ -134,6 +134,7 @@ header {
     width: 300px;
     position:absolute;
     background-color: var(--light-bg-solid);   
+    z-index: 1;
 }
 
 .submenu__link{
@@ -144,6 +145,136 @@ header {
 }
 
 .submenu__link:hover {
-    background-color: var(--dark-bg-solid);
+    background-color: var(--primary-solid);
     color: var(--light-font-solid);
 }
+
+/* BANNER */
+
+.banner {
+    background-image: url(../media/images/pexels-wr-heustis-16488650.jpg);
+    padding: var(--spacing-36);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    position:relative;
+}
+
+.banner::before{
+    content: '';
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    backdrop-filter: blur(2px) brightness(.7);
+}
+
+.banner__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-20);
+    align-items: start;
+    z-index: 2;
+    position: relative;
+}
+
+.banner__title {
+    font-family: var(--base-font);
+    font-size:var(--font-jumbo);
+    color: var(--light-font-solid);
+}
+
+.banner__text {
+    font-family: var(--base-font);
+    font-size:var(--font-medium);
+    color: var(--light-font-solid);
+}
+
+.banner__link { 
+    display: inline-block;
+    font-size:var(--font-small);
+    background-color: var(--light-bg-solid);
+    padding: var(--spacing-12) var(--spacing-68);
+    border-radius: 50px;
+    font-weight: 500; 
+    transition: all .3s ease-in-out;
+}
+
+.banner__link:hover{
+    background-color: var(--primary-solid);
+    color:var(--light-font-solid);
+}
+
+/* COLLECTIONS */
+
+.collection {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    padding: var(--spacing-26);
+}
+
+.collection:nth-child(2) .collection__cover{
+    order: -1;
+}
+
+.collection__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+    align-items: start;
+    padding:20%;
+}
+
+.collection__title {
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+    font-weight: 500;
+}
+
+.collection__text {
+    font-family: var(--base-font);
+    font-size: var(--font-small);
+    font font-weight: 300px;
+}
+
+.collection__link{
+    display: inline-block;
+    font-size: var(--font-xsmall);
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    border-radius: 50px;
+    padding: var(--spacing-8) var(--spacing-12);
+    transition: all .3s ease-in-out;
+}
+
+.collection__link:hover{
+    background-color: var(--primary-solid);
+    color:var(--light-font-solid);
+}
+
+/*FOOTER*/
+
+.footer{
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-24);
+}
+
+.footer__link {
+    font-family: var(--base-font);
+    font-size: var(--font-xsmall);
+    color:  var(--light-font-solid);
+    font-weight: 300px;
+}
+
+.footer__link:hover{
+    font-family: var(--base-font);
+    font-size: var(--font-xsmall);
+    color: var(--primary-solid);
+    font-weight: 300px;
+}
+
+

@@ -43,34 +43,43 @@
         </nav>        
     </header> <!-- Fin Header-->
 
-    <main>
-        <section>
-            <article>
-                    <h2>Título Home</h2>
-                    <p>Bienvenidos a la home page de mascotas</p>
-                    <a href="./pages/shop.html">SHOP</a>
-            </article>
-        </section>
+    <section class="banner">
+        <article class="banner__content container">
+            <h3 class="banner__title">Banner Principal</h3>
+            <p class="banner__text">Somos la mejor opción para vos</p>
+            <a class="banner__link" href="./pages/aboutus.html">CONOCENOS</a>
+        </article>
+    </section>
 
-        <section>
-            <article>
-                <h3>Servicio #1</h3>
-                <p>Somos la mejor opción para vos</p>
-                <a href="./pages/aboutus.html">CONOCENOS</a>
+    <main class="main-container">
+        <section class="collection container">
+            <article class="collection__content">
+                    <h2 class="collection__title">PRODUCTO 1</h2>
+                    <p class="collection__text">Paseos de mascotas</p>
+                    <a class="collection__link" href="./pages/shop.html">SHOP</a>
             </article>
-            <picture class="container banner">
+            <picture class="collection__cover">
                 <img src="./assets/media/images/pexels-blue-bird-7210524.jpg" alt="Imagen del servicio XX">
             </picture>
         </section>
-
+        <section class="collection container">
+            <article class="collection__content">
+                    <h2 class="collection__title">PRODUCTO 2 </h2>
+                    <p class="collection__text">Guardería para mascotas</p>
+                    <a class="collection__link" href="./pages/shop.html">SHOP</a>
+            </article>
+            <picture class="collection__cover">
+                <img src="./assets/media/images/pexels-blue-bird-7210537.jpg" alt="Imagen del servicio XX">
+            </picture>
+        </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div>
             <ul>
-                <li><a href="#">About Us</a></li>
-                <li>Contact Us</li>
-                <li>Social Media</li>
+                <li><a class="footer__link" href="">About Us</a></li>
+                <li><a class="footer__link" href="">Contact Us</a></li>
+                <li><a class="footer__link" href="">Social Media</a></li>
             </ul>
         </div>
     </footer>
