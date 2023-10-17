@@ -237,7 +237,7 @@ header {
 .collection__text {
     font-family: var(--base-font);
     font-size: var(--font-small);
-    font font-weight: 300px;
+    font-weight: 300px;
 }
 
 .collection__link{
@@ -276,5 +276,3 @@ header {
     color: var(--primary-solid);
     font-weight: 300px;
 }
-
-
