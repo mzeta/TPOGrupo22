@@ -61,7 +61,7 @@ html{
 
 a{
     text-decoration: none;
-    color:var(--dark-solid) !important;
+    color:var(--dark-solid);
     font-family: var(--base-font) !important;
 }
 
@@ -78,6 +78,10 @@ ul {
 p{
 font-size: var(--font-medium);
 }  
+
+hr{
+    font-family: var(--base-font);
+}
 
 .container {
     max-width: 1200px !important;
@@ -262,28 +266,46 @@ header {
 .footer{
     background-color: var(--dark-bg-solid);
     color: var(--light-font-solid);
-    padding: var(--spacing-24);
+    padding: var(--spacing-28);
+    margin-top: var(--spacing-28);
 }
 
-.footer__link {
+.footer-links__link {
     font-family: var(--base-font);
     font-size: var(--font-xsmall);
     color:  var(--light-font-solid);
     font-weight: 300px;
 }
 
-.footer__link:hover{
+.footer-links__link:hover{
     font-family: var(--base-font);
     font-size: var(--font-xsmall);
     color: var(--primary-solid);
     font-weight: 300px;
 }
 
+.footer-links__list{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    gap: var(--spacing-24);
+}
+
+
 /*FORMS*/
 
 .contact-main-container{
     max-width: 1200px !important;
     margin: 0 auto;
+}
+
+#form-data{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
 }
 
 .contact-form__info{
@@ -293,16 +315,22 @@ header {
     margin: 20px 48px;
 }
 
+.contact-form__text{
+    font-family: var(--base-font);
+    color:  var(--dark-solid);
+    font-size: 18px;
+}
+
 .contact-form__services{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 20px 0px;
+    margin: 20px 48px;
 }
 
 .contact-form__dates .contact-form-group{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     margin: 10px 0px;
 }
 
@@ -329,6 +357,10 @@ form .contact-form-group{
     border-radius: 4px;
     box-sizing: border-box;
     margin-left:5px;
+}
+
+.contact-form__toDateLb{
+margin-left: 20px;
 }
 
 input[type=submit] {

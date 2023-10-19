@@ -34,4 +34,5 @@ const validators = {
 
 document.querySelector("form").addEventListener("submit", (e) => {
     return validation(validators);
+    
 });

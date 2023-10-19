@@ -50,7 +50,9 @@
                 <br>
                <p class="contact-form__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto soluta neque voluptas beatae sed, quisquam tempora at ex animi molestiae mollitia velit, vero reiciendis voluptatem illum esse quasi perspiciatis fugit.</p>    
             </article>
-            <form id="form-data">
+            
+            <form id="form-data" action="https://formsubmit.co/mceteri@gmail.com" method="POST">
+            <!--<form id="form-data" onsubmit="emailSend(); reset(); return false;">-->
                 <div class="contact-form__info">
                     <div class="contact-form-group">
                             <label for="name">Nombre:</label>
@@ -58,7 +60,7 @@
                     </div>
                     <br>
                     <div class="contact-form-group">
-                        <label for="petName">Nombre Mascota:</label>
+                        <label for="petName">Mascota:</label>
                         <input type="text" class="form-control" id="petName" name="Mascota" />
                     </div>
                     <br>
@@ -67,41 +69,38 @@
                         <input type="email" class="form-control" id="email" name="email" />
                     </div>
                  </div>
-                <hr class="hr_color">
-                <h3 class="contact-form__text">Seleccione el servicio que desea contratar</h3>
+                <h3 class="contact-form__title">Seleccione el servicio que desea contratar</h3>
                     <div class="contact-form__services">
                         <div class="contact-form-group">
                                 <label class="contact-form-rd-container">Paseos</label>
-                                <input type="radio" checked="checked" name="radio">
+                                <input type="radio" checked="checked" name="radio_Paseos">
                                 <span class="checkmark"></span>
                         </div>
                         <div class="contact-form-group">
                             <label class="contact-form-rd-container">Alojamiento</label>
-                            <input type="radio" name="radio">
+                            <input type="radio" name="radio_Alojamiento">
                             <span class="checkmark"></span>
                         </div>
                         <div class="contact-form-group">
                             <label class="contact-form-rd-container">Cuidado a domicilio</label>
-                            <input type="radio" name="radio">
+                            <input type="radio" name="radio_Cuidados">
                             <span class="checkmark"></span>
                         </div>
                     </div>
-                    <hr class="hr_color">
-                    <h3 class="contact-form__text">Para que fecha?</h3>
+                    <h3 class="contact-form__title">Para que fecha?</h3>
                     <div class="contact-form__dates">
                         <div class="contact-form-group">
                             <label for="fromDate">Desde:</label>
                             <input type="date" id="fromDate" name="from-date">
-                            <label for="toDate">Hasta:</label>
+                            <label class="contact-form__toDateLb" for="toDate">Hasta:</label>
                             <input type="date" id="toDate" name="to-date">
                         </div>
                     </div>
-                    <hr class="hr_color">
-                    <h3 class="contact-form__text">Observaciones</h3>
+                    <h3 class="contact-form__title">Observaciones</h3>
                     <div class="contact-form__message">
                         <div class="contact-form-group">
                         <label class="contact-form__label" for="message">Mensaje:</label>
-                        <textarea class="contact-form__textArea" id="message" name="message" rows="4" cols="80" ></textarea>
+                        <textarea class="contact-form__textArea" id="message" name="message" rows="4" cols="55" ></textarea>
                         </div>
                     </div>
                 <input type="submit" value="Enviar">
@@ -110,18 +109,22 @@
 
     </main>
 
-    <footer>
-        <div class="footer-wrapper">
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li>Contact Us</li>
-                <li>Social Media</li>
+    <footer class="footer">
+        <section class="footer-links">
+            <ul class="footer-links__list">
+                <li><a class="footer-links__link" href="">About Us</a></li>
+                <li><a class="footer-links__link" href="">Contact Us</a></li>
+                <li><a class="footer-links__link" href="">Social Media</a></li>
             </ul>
-        </div>
+        </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-     <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/index.js"></script>
+  <!--  <script src="../assets/js/emailSender.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script> -->
+</script>
 </body>
 </html>
