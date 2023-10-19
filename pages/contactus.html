@@ -4,38 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Codo23 Comision 23506 - Grupo 22</title>
-    <link rel="stylesheet" href="../assets/css/index.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <header> <!-- Inicio Header-->
         <nav class="navbar container">
             <picture class="navbar__logo">
-                <a href="">
+                <a href="../index.html">
                     <img src="/assets/media/images/paw-sm.png" alt="logo">
                 </a>
             </picture>
            <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a class="navbar__link" href='/index.html'>HOME</a>
+                    <a class="navbar__link" href='../index.html'>HOME</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href='./pages/aboutus.html'>NOSOTROS</a>
+                    <a class="navbar__link" href='./aboutus.html'>NOSOTROS</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href='./pages/contactus.html'>CONTACTO</a>
+                    <a class="navbar__link" href='./contactus.html'>RESERVAS</a>
                 </li>
                 <li class="navbar__item with-submenu">
-                    <a class="navbar__link  with-icon" href='./pages/shop.html'>SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <a class="navbar__link  with-icon" href='./shop.html'>SERVICIOS<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
                     <ul class="submenu">
                         <li class="submenu__item">
-                            <a href="" class="submenu__link">PRODUCTO 1</a>
+                            <a href="" class="submenu__link">PASEOS</a>
                         </li>
                         <li class="submenu__item">
-                            <a href="" class="submenu__link">PRODUCTO 2</a>
+                            <a href="" class="submenu__link">ALOJAMIENTO</a>
                         </li>
                         <li class="submenu__item">
-                            <a href="" class="submenu__link">PRODUCTO 3</a>
+                            <a href="" class="submenu__link">CUIDADO A DOMICILIO</a>
                         </li>
                     </ul>
                 </li>
@@ -44,33 +43,33 @@
     </header> <!-- Fin Header-->
 
     <main class="contact-main-container">
-        <section class="contact-form container">
+        <section>
             <article class="contact-form__content">
                 <br>
                 <h3 class="contact-form__title">Completa tus datos para realizar una reserva</h3>
                 <br>
                <p class="contact-form__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto soluta neque voluptas beatae sed, quisquam tempora at ex animi molestiae mollitia velit, vero reiciendis voluptatem illum esse quasi perspiciatis fugit.</p>    
             </article>
-            <form action="#" id="form-data" method="post">
+            <form id="form-data">
                 <div class="contact-form__info">
                     <div class="contact-form-group">
                             <label for="name">Nombre:</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
+                            <input type="text" class="form-control" id="name" name="Nombre" />
                     </div>
                     <br>
                     <div class="contact-form-group">
-                        <label for="name">Nombre Mascota:</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
+                        <label for="petName">Nombre Mascota:</label>
+                        <input type="text" class="form-control" id="petName" name="Mascota" />
                     </div>
                     <br>
                     <div class="contact-form-group">
                         <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
+                        <input type="email" class="form-control" id="email" name="email" />
                     </div>
                  </div>
-                <br>
+                <hr class="hr_color">
+                <h3 class="contact-form__text">Seleccione el servicio que desea contratar</h3>
                     <div class="contact-form__services">
-                        <h3 class="contact-form__text">Seleccione el servicio que desea contratar</h3>
                         <div class="contact-form-group">
                                 <label class="contact-form-rd-container">Paseos</label>
                                 <input type="radio" checked="checked" name="radio">
@@ -87,25 +86,25 @@
                             <span class="checkmark"></span>
                         </div>
                     </div>
+                    <hr class="hr_color">
+                    <h3 class="contact-form__text">Para que fecha?</h3>
                     <div class="contact-form__dates">
-                        <h3 class="contact-form__text">Para que fecha?</h3>
                         <div class="contact-form-group">
-                            <label for="from">Desde:</label>
-                            <input type="date" id="from-date" name="from-date">
-                            <br>
-                            <label for="to">Hasta:</label>
-                            <input type="date" id="to-date" name="to-date">
+                            <label for="fromDate">Desde:</label>
+                            <input type="date" id="fromDate" name="from-date">
+                            <label for="toDate">Hasta:</label>
+                            <input type="date" id="toDate" name="to-date">
                         </div>
                     </div>
-                    <br>
+                    <hr class="hr_color">
+                    <h3 class="contact-form__text">Observaciones</h3>
                     <div class="contact-form__message">
-                        <h3 class="contact-form__text">Observaciones</h3>
                         <div class="contact-form-group">
-                        <label for="message">Mensaje:</label>
-                        <textarea class="form-control" id="message" name="message" rows="4" cols="80" required></textarea>
+                        <label class="contact-form__label" for="message">Mensaje:</label>
+                        <textarea class="contact-form__textArea" id="message" name="message" rows="4" cols="80" ></textarea>
                         </div>
                     </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <input type="submit" value="Enviar">
             </form>
         </section>
 
@@ -123,6 +122,6 @@
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <script src="../assets/js/index.js"></script>
 </body>
 </html>

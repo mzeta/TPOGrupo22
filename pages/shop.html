@@ -4,38 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop Online | Codo23 Comision 23506 - Grupo 22</title>
-    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <picture>
-                <a href="">
+    <header> <!-- Inicio Header-->
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="../index.html">
                     <img src="/assets/media/images/paw-sm.png" alt="logo">
                 </a>
             </picture>
-           <ul>
-                <li>
-                    <a href='../index.html'>HOME</a>
+           <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link" href='../index.html'>HOME</a>
                 </li>
-                <li>
-                    <a href='/pages/aboutus.html'>NOSOTROS</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href='./aboutus.html'>NOSOTROS</a>
                 </li>
-                <li>
-                    <a href='/pages/contactus.html'>CONTACTO</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href='./contactus.html'>RESERVAS</a>
                 </li>
-                <li>
-                    <a href='/pages/shop.html'>SHOP</a>
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link  with-icon" href='./shop.html'>SERVICIOS<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">PASEOS</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">ALOJAMIENTO</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">CUIDADO A DOMICILIO</a>
+                        </li>
+                    </ul>
                 </li>
            </ul>    
-        </nav>
-         <div class="content-wrapper">
-            <div class="title">
-                <h2 class="header-title">Shop Online</h2>
-            </div>
-        </div>
-
-    </header>
+        </nav>        
+    </header> <!-- Fin Header-->
 
     <main>
         <section name="section1">
