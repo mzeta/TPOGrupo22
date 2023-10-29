@@ -1,0 +1,31 @@
+[
+    {
+        "id": "001",
+        "name": "Sophie A.",
+        "image": "../assets/media/images/sophie-sm.jpg",
+        "resume": "Persona servicial, ama con locura a los animales, cariñosa, dulce y capaz en cualquier situación.",
+        "service": ["alojamiento","paseo"]
+    },
+    {
+        "id": "002",
+        "name": "Louis C.",
+        "image": "../assets/media/images/louis-sm.jpg",
+        "resume": "Siempre he paseado los perros de mis abuelos y jugado con ellos, no soy adiestrador pero me encantan.",
+        "service": ["alojamiento","paseo"]
+    },
+    {
+        "id": "003",
+        "name": "Mariana P.",
+        "image": "../assets/media/images/mariana-sm.jpg",
+        "resume": "Persona servicial, ama con locura a los animales, cariñosa, dulce y capaz en cualquier situación.",
+        "service": ["alojamiento","paseo"]
+    },
+    {
+        "id": "004",
+        "name": "Genaro L.",
+        "image": "../assets/media/images/genaro-sm.jpg",
+        "resume": "Siempre he paseado los perros de mis abuelos y jugado con ellos, no soy adiestrador pero me encantan.",
+        "service": ["alojamiento","paseo"]
+    }
+
+]
