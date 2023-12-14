@@ -12,7 +12,9 @@ Público Objetivo
 Personas que viven en la Ciudad Autónoma de Buenos Aires, principalmente “millennials”, interesados en el bienestar de sus mascotas con poco tiempo para su cuidado.
 
 Objetivos del Proyecto
+
 Armar un catálogo de los servicios ofrecidos.
+
 Mostrar los puntos de encuentro más cercanos para facilitar la venta de servicios.
 
 Organización de Tareas
