@@ -1,6 +1,5 @@
 # TPOGrupo22
-TPO Grupo 22 Codo23 | Comisión 23506
-Happy Paws
+Trabajo Práctico Obligatorio Grupo 22 Codo a Codo 2023 | Comisión 23506
 Happy Paws es una empresa que ofrece servicios para mascotas, orientados a dueños jóvenes de la Ciudad de Buenos Aires.
 
 Idea General
